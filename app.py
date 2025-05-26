@@ -1,34 +1,34 @@
 from fastapi import FastAPI, Response, HTTPException
-from services.KPI1 import get_attribute_frequency_chart
-from services.KPI2 import get_attribute_frequency_chart_kpi2_with_sentiment
-from services.KPI3 import get_kpi3_sheet1_campaign_timeline_chart
+from adv_analysis.KPI1 import get_attribute_frequency_chart
+from adv_analysis.KPI2 import get_attribute_frequency_chart_kpi2_with_sentiment
+from adv_analysis.KPI3 import get_kpi3_sheet1_campaign_timeline_chart
 from fastapi import FastAPI
-from services.KPI4 import router as kpi4_router
-from services.KPI5 import get_kpi5_chart
+from adv_analysis.KPI4 import router as kpi4_router
+from adv_analysis.KPI5 import get_kpi5_chart
 from fastapi import FastAPI, UploadFile, File, HTTPException
-from services.KPI6 import read_kpi6_excel
+from adv_analysis.KPI6 import read_kpi6_excel
 import numpy as np
-from services.KPI7 import get_brand_personality_radar
+from adv_analysis.KPI7 import get_brand_personality_radar
 from fastapi.responses import JSONResponse
-from services.KPI8 import get_kpi8_dashboard_chart_and_data
-from services.KPI9 import get_kpi9_reviews_data
-from services.KPI10 import get_comparison_sheet_sections
+from adv_analysis.KPI8 import get_kpi8_dashboard_chart_and_data
+from adv_analysis.KPI9 import get_kpi9_reviews_data
+from adv_analysis.KPI10 import get_comparison_sheet_sections
 from fastapi.responses import HTMLResponse
-from services.KPI11 import get_docx_file_response
-from services.KPI12 import analyze_kpi12_data
-from services.KPI13 import get_conversion_funnel_chart_improved
-from services.KPI14 import analyze_data
-from services.KPI15 import get_sheet2_data
-from services.KPI16 import get_value_perception_charts
-from services.KPI17 import get_sheet1_data
-from services.KPI18 import get_kpi18_sheet5_data
-from services.KPI19 import get_kpi19_sheet1_data
-from services.KPI20 import get_kpi20_sheet2_data
-from services.KPI21 import get_kpi21_sheet1_data
-from services.KPI22 import get_category_pie_chart
-from services.KPI23 import get_kpi23_sheet1_data
-from services.KPI24 import  get_kpi24_sheet3_data,  get_kpi24_qualitative_assessment_details
-from services.KPI25 import get_crisis_sentiment_trends_chart
+from adv_analysis.KPI11 import get_docx_file_response
+from adv_analysis.KPI12 import analyze_kpi12_data
+from adv_analysis.KPI13 import get_conversion_funnel_chart_improved
+from adv_analysis.KPI14 import analyze_data
+from adv_analysis.KPI15 import get_sheet2_data
+from adv_analysis.KPI16 import get_value_perception_charts
+from adv_analysis.KPI17 import get_sheet1_data
+from adv_analysis.KPI18 import get_kpi18_sheet5_data
+from adv_analysis.KPI19 import get_kpi19_sheet1_data
+from adv_analysis.KPI20 import get_kpi20_sheet2_data
+from adv_analysis.KPI21 import get_kpi21_sheet1_data
+from adv_analysis.KPI22 import get_category_pie_chart
+from adv_analysis.KPI23 import get_kpi23_sheet1_data
+from adv_analysis.KPI24 import  get_kpi24_sheet3_data,  get_kpi24_qualitative_assessment_details
+from adv_analysis.KPI25 import get_crisis_sentiment_trends_chart
 
 
 from fastapi.responses import StreamingResponse
